@@ -1,3 +1,9 @@
+# Frank Zhang
+# November 14th last edit
+# I finally make my calculator work by using a special function to "equal" which is "eval", and I finish my calculator.
+
+
+
 import tkinter
 
 root = tkinter.Tk()
@@ -67,7 +73,7 @@ def clear():
 
 def equal():
     equal = answer.get()
-    answer.set(equal + "==")
+    answer.set(eval(equal))
 
 
 def divide():
@@ -92,7 +98,7 @@ def plus():
 
 def enter():
     enter = answer.get()
-    answer.set(enter + "=")
+    answer.set(eval(enter))
 
 
 def point():
